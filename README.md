@@ -63,6 +63,22 @@ kubectl apply -f nginx_configMap.yaml
 kubectl apply -f nginx_deployment.yaml
 ```
 
+### Paso 12
+Para configurar la base de datos
+```console
+cd mysql-definitions
+```
+
+### Paso 13
+```console
+kubectl apply -f mysql-pv.yaml
+```
+
+### Paso 13
+```console
+kubectl apply -f mysql-deployment.yaml
+```
+
 ## Comandos de ayuda
 
 ```console
@@ -101,3 +117,11 @@ kubectl logs pod-name
 ```console
 kubectl logs pod-name --all-containers
 ```
+
+acceder a la base de datos:
+
+´´´
+kubectl exec --stdin --tty <pod-name> -- /bin/bash
+mysql -p
+password
+´´´
