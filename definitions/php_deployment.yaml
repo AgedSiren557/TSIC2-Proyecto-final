@@ -32,3 +32,5 @@ spec:
         volumeMounts:
         - name: code
           mountPath: /code
+        command:
+        - apt-get update && apt-get install nano
