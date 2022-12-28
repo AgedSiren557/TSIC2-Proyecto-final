@@ -29,26 +29,36 @@ kubectl create -f storageClass.yaml
 ```
 
 ### Paso 6
+
+Dentro del worker-node ejecutar los siguientes comandos: 
+
 ```console
-kubectl create -f persistentVolume.yaml
+DIRNAME="vol"
+mkdir -p /mnt/disk/$DIRNAME
+chmod 777 /mnt/disk/$DIRNAME
 ```
 
 ### Paso 7
 ```console
-kubectl apply -f code_volume.yaml
+kubectl create -f persistentVolume.yaml
 ```
 
 ### Paso 8
 ```console
-kubectl apply -f php_deployment.yaml
+kubectl apply -f code_volume.yaml
 ```
 
 ### Paso 9
 ```console
-kubectl apply -f nginx_configMap.yaml
+kubectl apply -f php_deployment.yaml
 ```
 
 ### Paso 10
+```console
+kubectl apply -f nginx_configMap.yaml
+```
+
+### Paso 11
 ```console
 kubectl apply -f nginx_deployment.yaml
 ```
