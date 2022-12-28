@@ -99,5 +99,5 @@ kubectl logs pod-name
 ```
 
 ```console
-kubectl logs pod-name container-name
+kubectl logs pod-name --all-containers
 ```
