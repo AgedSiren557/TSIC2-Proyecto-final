@@ -7,6 +7,7 @@ Configurar cluster de kubernetes
 
 https://help.clouding.io/hc/es/articles/4402401958034-C%C3%B3mo-instalar-un-cluster-de-Kubernetes-en-CentOS-8
 https://upcloud.com/resources/tutorials/install-kubernetes-cluster-centos-8
+https://docs.google.com/document/d/1diOW_whS-QC-MX8Wv7YMTbw20Z5_RF_gSFW2i4GliwQ/edit
 
 ### Paso 2
 ```console
